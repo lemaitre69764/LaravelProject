@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-})->name('main');
+})->name('main'); */ 
+
+Route::get('/', 'App\Http\Controllers\MainController@index')->name('Main.index');
 //index
 Route::get('products','App\Http\Controllers\ProductController@index')->name('products.index');
 //create
