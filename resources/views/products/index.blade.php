@@ -85,28 +85,7 @@
   <br>
 Слайдшоу.
 -->
-<header>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".mySlides").eq(0).show();
-      setInterval(function(){
-        $(".mySlides").fadeOut(100);
-        $(".mySlides").eq(($(".mySlides").index($(".mySlides:visible")) + 1) % $(".mySlides").length).fadeIn(100);
-      }, 3000);
-    });
-    
-  </script>
-  <title>Simple Marker</title>
-  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgKZeURc5ch8p-fRYjvxHs0HpF0sd123Y&callback=console.debug&libraries=maps,marker&v=beta">
-  </script>
 
-<body>
-  <gmp-map center="43.235084533691406,76.90956115722656" zoom="14" map-id="DEMO_MAP_ID">
-    <gmp-advanced-marker position="43.235084533691406,76.90956115722656" title="My location"></gmp-advanced-marker>
-  </gmp-map>
-</body>
-</header>
 
   <br>  
   <div>
