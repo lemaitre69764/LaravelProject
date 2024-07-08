@@ -77,11 +77,34 @@
     <blockquote class="quote"><p>"Protecting your digital assets is not just a priority, it's our passion."</p></blockquote>
     </div>
     <style>
-        div
+        #div1
         {
             width: 300px;
                 margin:auto;
         }
+
+        .btn-new {
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0b63f6;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+      /* Новые стили положения */
+     
+  }
+
+  .light-mode {
+    background-color: #0b63f6;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+    }  
+    
     </style>
 </body>
 
