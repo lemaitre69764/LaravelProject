@@ -5,11 +5,7 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>choose the car</h1>
-        <p> mercedes</p>
-        <p> something</p>
-<p> something</p>
-<p> something</p>
-        <p> something</p>
+        <h1>fool</h1>
+        <p> </p>
     </body>
 </html> 
