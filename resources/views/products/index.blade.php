@@ -70,21 +70,6 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CraF-70QGwk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>                                          <!--https://www.youtube.com/watch?v=CraF-70QGwk-->
         <br><br>
-<!--
-<div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="p2.png" width="950" height="550" alt="Slide 1" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="team.jpg" width="950" height="550" alt="Slide 2" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="s3.jpg" width="950" height="550" alt="Slide 3" style="width:100%">
-    </div>
-  </div>
-  <br>
-Слайдшоу.
--->
 
 
   <br>  
