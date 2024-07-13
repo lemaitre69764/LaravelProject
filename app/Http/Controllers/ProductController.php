@@ -27,8 +27,20 @@ class ProductController extends Controller
     {
         //$product = DB::table('products')->where('id', $product)->get();
         //$product = DB::table('products')->where('id', $product)->first();
-        $product = DB::table('products')->find($product);
+        //$product = DB::table('products')->find($product);
+        //$product = Product::where('id', $product)->get();
+        //$product = Product::where('id', $product)->first();
+        //$product = Product::find($product); 
+        // ----------------------------------------
+        $product = Product::findOrFail($product);
+        /*вот это команда заебись работает, так как
+        с помощью него можно выводить ошибку 
+        404 Not Found если продукта в нашей таблице
+        нету =)
+        */
         dd($product);
+        
+        
         return view('products.show');// test
     }
     public function edit($product)
