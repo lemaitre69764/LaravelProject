@@ -24,6 +24,8 @@ class ProductController extends Controller
     }
     public function show($product) 
     {
+        $product = DB::table('products')->where('id', $product)->get();
+        dd($product);
         return view('products.show');// test
     }
     public function edit($product)
