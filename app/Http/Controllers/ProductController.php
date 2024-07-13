@@ -25,14 +25,19 @@ class ProductController extends Controller
     }
     public function show($product) 
     {
-        //$product = DB::table('products')->where('id', $product)->get();
-        //$product = DB::table('products')->where('id', $product)->first();
-        //$product = DB::table('products')->find($product);
-        //$product = Product::where('id', $product)->get();
-        //$product = Product::where('id', $product)->first();
-        //$product = Product::find($product); 
+            //$product = DB::table('products')->where('id', $product)->get();
+            //$product = DB::table('products')->where('id', $product)->first();
+            //$product = DB::table('products')->find($product);
+             //$product = Product::where('id', $product)->get();
+             //$product = Product::where('id', $product)->first();
+             //$product = Product::find($product); 
         // ----------------------------------------
         $product = Product::findOrFail($product);
+        /*Описание: Метод findOrFail() используется 
+        для поиска записи по ее первичному ключу.
+         Если запись не найдена, метод выбросит исключение
+         Illuminate\Database\Eloquent\ModelNotFoundException.*/
+         //----------------------------------------------------
         /*вот это команда заебись работает, так как
         с помощью него можно выводить ошибку 
         404 Not Found если продукта в нашей таблице
