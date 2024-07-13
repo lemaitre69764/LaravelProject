@@ -33,24 +33,6 @@ class ProductController extends Controller
              //$product = Product::find($product); 
         // ----------------------------------------
         $product = Product::findOrFail($product);
-        /*Описание: Метод findOrFail() используется 
-        для поиска записи по ее первичному ключу.
-         Если запись не найдена, метод выбросит исключение
-         Illuminate\Database\Eloquent\ModelNotFoundException.*/
-         //----------------------------------------------------
-        /*вот это команда заебись работает, так как
-        с помощью него можно выводить ошибку 
-        404 Not Found если продукта в нашей таблице
-        нету =)
-        а так же его можно написать вместо несколько строчного
-        кода(снизу пример)
-        ---
-        if (isset($product)){
-        dd();
-        }
-        return 'failer'
-        ---
-        */
         dd($product);
         
         
