@@ -37,6 +37,14 @@ class ProductController extends Controller
         с помощью него можно выводить ошибку 
         404 Not Found если продукта в нашей таблице
         нету =)
+        а так же его можно написать вместо несколько строчного
+        кода(снизу пример)
+        ---
+        if (isset($product)){
+        dd();
+        }
+        return 'failer'
+        ---
         */
         dd($product);
         
