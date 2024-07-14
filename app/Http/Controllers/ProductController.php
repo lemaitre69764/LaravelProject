@@ -33,10 +33,13 @@ class ProductController extends Controller
              //$product = Product::find($product); 
         // ----------------------------------------
         $product = Product::findOrFail($product);
-        dd($product);
         
-        
-        return view('products.show');// test
+        return view('products.show')->with([
+            'product' => $product,
+            'subtitle' => '<h2>Something</h2>',
+        ]);// test
+
+
     }
     public function edit($product)
     {
