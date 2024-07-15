@@ -9,13 +9,24 @@
   <div class="table-responsive">
   <table class="table table-striped">
     <thead class="thead-light">
-<th>Id</th>
-<th>Title</th>    
-<th>Description</th>
+<h1>List Of Products</h1>
+<!-- @if (empty($products)) -->
+ @empty ($products) 
+<div class="alert alert-warning">
+  The list of products is empty
+</div>
+@else
+      <th>Id</th>
+      <th>Title</th>    
+      <th>Description</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Status</th>
+
 </thead>
 <tbody>
   <tr>
-<td>1</td>
+<td>Id</td>
 <td>Soap</td>
 <td>Best soap Decription</td>
   </tr>
@@ -27,5 +38,6 @@
 </tbody>
   </table>
 </div>
+
 </body>
 </html>
