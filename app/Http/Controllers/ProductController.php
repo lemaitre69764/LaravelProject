@@ -22,7 +22,7 @@ class ProductController extends Controller
     }
     public function store()
     {
-        //
+        dd('In store');
     }
     public function show($product) 
     {
