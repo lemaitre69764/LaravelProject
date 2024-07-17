@@ -18,7 +18,7 @@ class ProductController extends Controller
     }
     public function create()
     {
-        return 'a form to create a product FROM controller'; 
+        return view('products.create'); 
     }
     public function store()
     {
