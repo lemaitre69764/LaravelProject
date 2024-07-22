@@ -9,11 +9,11 @@
 </div>
 <div class="form-row">
     <label>Description</label>
-<input class="form-control" type="text" name="title" required>
+<input class="form-control" type="text" name="description" required>
 </div>
 <div class="form-row">
     <label>Price</label>
-<input class="form-control" type="number" min="1.00" step="0.01" name="title" required>
+<input class="form-control" type="number" min="1.00" step="0.01" name="price" required>
 </div>
 <div class="form-row">
     <label>Stock</label>
