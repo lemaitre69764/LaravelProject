@@ -44,7 +44,7 @@ class ProductController extends Controller
     }
     public function update($product)
     {
-        //
+        dd('In Update');
     }
     public function destroy($product)
     {
