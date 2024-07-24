@@ -22,10 +22,16 @@ class ProductController extends Controller
     }
     public function store()
     {
-    // dd(request(), request()->title, request()->all());
      $product = Product::create(request()->all());
-        return $product;
-     //   dd('In store');
+     if (request()->stock == 0 && request()->status == 'available'){
+        session()->flash('error', 'If available must have stock');
+//flash работает однажды для последующего пост запроса, и поэтому полезен в нашем
+// случае
+        return redirect()->back();
+     }
+     
+
+     return redirect()->route('products.index');
     }
     public function show($product) 
     {
