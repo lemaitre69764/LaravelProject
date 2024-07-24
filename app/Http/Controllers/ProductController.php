@@ -44,7 +44,9 @@ class ProductController extends Controller
     }
     public function update($product)
     {
-        dd('In Update');
+        $product = Product::findOrFail($product);
+        $product->update(request()->all());
+        return $product;
     }
     public function destroy($product)
     {
