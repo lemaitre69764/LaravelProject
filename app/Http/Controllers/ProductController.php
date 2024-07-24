@@ -45,11 +45,21 @@ class ProductController extends Controller
     public function update($product)
     {
         $product = Product::findOrFail($product);
+
         $product->update(request()->all());
-        return $product;
+        
+        return //redirect;
+        
+        redirect()->route('products.index');
+
+       //redirect()->action('ProductController@index');
     }
     public function destroy($product)
     {
+        $product = Product::findOrFail($product);
 
+        $product->delete();
+
+        return $product;
     }
 }
