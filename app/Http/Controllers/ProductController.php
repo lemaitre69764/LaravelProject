@@ -29,25 +29,18 @@ class ProductController extends Controller
     }
     public function show($product) 
     {
-            //$product = DB::table('products')->where('id', $product)->get();
-            //$product = DB::table('products')->where('id', $product)->first();
-            //$product = DB::table('products')->find($product);
-             //$product = Product::where('id', $product)->get();
-             //$product = Product::where('id', $product)->first();
-             //$product = Product::find($product); 
-        // ----------------------------------------
         $product = Product::findOrFail($product);
         
         return view('products.show')->with([
             'product' => $product,
             'subtitle' => '<h2>Something</h2>',
-        ]);// test
-
-
+        ]);
     }
     public function edit($product)
     {
-        return "Showing the form to edit the {$product}";
+      return view('products.edit')->with([
+        'product' => Product::findOrFail($product),
+      ]);
     }
     public function update($product)
     {
